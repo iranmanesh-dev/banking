@@ -1,17 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import {Rubik, Vazirmatn} from 'next/font/google'
-
-const rubik = Rubik({
-  subsets: ['arabic', 'latin'],
-  variable: '--font-rubik',
-  weight: ['300', '400', '500', '600', '700', '800', '900']
-})
-const vazir = Vazirmatn({
-  subsets: ['latin', 'arabic'],
-  variable: '--font-vazir',
-  weight: ['200', '400', '600', '800']
-})
+import { ibm, inter, rubik, vazir, yekan } from '@/lib/fonts'
 
 export const metadata: Metadata = {
   title: "نرم افزار جامع بانکداری مدرن",
@@ -24,9 +13,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fa" dir='rtl'>
       <body
-        className={`${vazir.variable} ${rubik.variable} antialiased`}
+        className={`${rubik.variable} ${vazir.variable} ${yekan.variable} ${ibm.variable} ${inter.variable} antialiased`}
       >
         {children}
       </body>

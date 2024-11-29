@@ -86,6 +86,9 @@ const config = {
       fontFamily: {
         inter: "var(--font-inter)",
         "ibm-plex-serif": "var(--font-ibm-plex-serif)",
+        yekan: "var(--font-yekan)",
+        vazir: "var(--font-vazir)",
+        rubik: "var(--font-rubik)",
       },
       keyframes: {
         "accordion-down": {
